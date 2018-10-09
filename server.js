@@ -1,32 +1,43 @@
 require('dotenv').config()
+
+var express = require('express')
+var path = require('path')
+var cookieParser = require('cookie-parser')
+var logger = require('morgan')
+
+
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGODDB_URI, {useNewParser: true})
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
+
 const connection = mongoose.connection
-connection.on('connected', ()=>{
-    console.log('a successful connection msg goes here')
+connection.on('connected', () => {
+    console.log('Mongoose Connected Successfully')
+});
+connection.on('error', (err) => {
+    console.log('Mongoose default connection error: ' + err)
 })
-connection.on('error', (err)=>{
-    console.log('failed to connect msg goes here: ' + err)
-})
 
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// EXPRESS AND MIDDLEWARE
+var app = express()
 
-var indexRouter = require('./routes');
-var usersRouter = require('./routes/users');
 
-var app = express();
+app.use(logger('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.static(__dirname + '/client/build/'))
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname + '/client/build')));
-
+// ROUTES
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/build/index.html')
 })
 
-module.exports = app;
+const usersController = require('./routes/usersController')
+const pioneersController = require('./routes/pioneersController')
+const phenomenaController = require('./routes/phenomenaController')
+
+app.use('/api/users', usersController)
+app.use('/api/pioneers', pioneersController)
+app.use('/api/pioneers/:pioneerId/phenomena', phenomenaController)
+
+module.exports = app
