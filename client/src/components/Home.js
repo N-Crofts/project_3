@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import styled from 'styled-components'
 
 const StyledHome = styled.div`
+
 .landingTitle {
     text-align: center;
 }
@@ -32,7 +33,7 @@ export default class Home extends Component {
             <p>an archive of brilliant minds, strange phenomena, and hidden history.</p>
           </div>
           <h5 class="center-align">
-          <StyledLink to={`/login/`} >Sign Up </StyledLink>
+          <StyledLink to={`/login/`} >sign up </StyledLink>
           </h5>
         </StyledHome>
       )

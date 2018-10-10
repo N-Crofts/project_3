@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import NavbarThree from './NavbarThree'
+import Navbar from './Navbar'
 
 const StyledLink = styled(Link)`
 text-decoration: none;
@@ -40,12 +40,12 @@ export default class PioneerList extends Component {
     render() {
         const pioneersList = this.state.pioneers.map((pioneer, i) => {
             return (<div key={i}>
-            <StyledLink to={`/pioneers/${pioneer._id}`} >Name: {pioneer.pioneerName}</StyledLink>
+            <StyledLink to={`/pioneers/${pioneer._id}`} > - {pioneer.pioneerName}</StyledLink>
             </div>)
         })
     return (
       <div>
-         <NavbarThree/>
+         <Navbar/>
 
          {pioneersList}
          

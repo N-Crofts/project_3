@@ -34,20 +34,21 @@ button {
 
 const StyledPhenomenonContainer = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
 justify-content: flex-start;
-max-width: 600px;
+/* height: 10px; */
+/* max-width: 1000px; */
 `
 
 const StyledPhenomenon = styled.div`
-background-color: rgb(250,250,190);
-width: 30vw;
-min-width: 100px;
-max-width: 150px;
-margin: 15px;
+background-color: #cfd8dc;
+/* width: ; */
+/* min-width: 10em;
+max-width: 20em; */
+margin: 30px;
 padding: 10px;
-height: 150px;
+/* height: 200px; */
 box-shadow: 6px 6px 6px rgb(230,230,230);
 div {
   font-size: 14px;
@@ -65,11 +66,17 @@ div {
     display: none;
   }
 }
+
+#phenomenon-description {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
 `
 
 ///////////////////////////////////////////////////////////
 
-export default class PioneerBoard extends Component {
+export default class StrangePhenomena extends Component {
   state = {
     pioneer: {},
     phenomena: [
@@ -124,11 +131,12 @@ export default class PioneerBoard extends Component {
         onChange={(event) => this.handleChange(event, i)} 
         onBlur={() => this.updatePhenomenon(i)} />
         
-        <span onClick={() => this.handleDelete(phenomenon._id)} >x</span>
         
-        <input type='text' name='description' value={phenomenon.description} 
+        <input type='text' id="phenomenon-description" name='description' value={phenomenon.description} 
         onChange={(event) => this.handleChange(event, i)} 
         onBlur={() => this.updatePhenomenon(i)}  />
+                <span onClick={() => this.handleDelete(phenomenon._id)} >x</span>
+
 
       </StyledPhenomenon>
     })
@@ -139,8 +147,7 @@ export default class PioneerBoard extends Component {
       <StyledPage>
         <h1>The Strange Case Of ... {this.state.pioneer.pioneerName}</h1>
         <div id="interactions">
-          <button onClick={this.handleNew}>New Phenomenon</button>
-          <span>Sort phenomena by: <button>??</button></span>
+          <button onClick={this.handleNew}>Add Phenomenon</button>
           <span id="save-message">All changes saved</span>
         </div>
         <StyledPhenomenonContainer>

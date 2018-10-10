@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import NavbarThree from './NavbarThree'
+import Navbar from './Navbar'
 
 const StyledLink = styled(Link)`
 text-decoration: none;
@@ -27,7 +27,7 @@ export default class Users extends Component {
         })
     return (
       <div>
-         <NavbarThree/>
+         <Navbar/>
          {usersList}
       </div>
     )

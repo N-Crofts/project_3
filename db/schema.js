@@ -3,7 +3,7 @@ const Schema = require('mongoose').Schema
 const PhenomenonSchema = new Schema({
     title: {
         type: String,
-        default: 'New Phenomena'
+        default: 'New Phenomenon'
     },
     description: {
         type: String,
@@ -12,14 +12,9 @@ const PhenomenonSchema = new Schema({
 })
 
 const PioneerSchema = new Schema({
-    title: {
-        type: String,
-        default: 'New Pioneer'
-    },
-    description: {
-        type: String,
-        default: 'New Description'
-    }
+    pioneerName: String,
+    description: String,
+    phenomena: [PhenomenonSchema],
 })
 
 const UserSchema = new Schema({

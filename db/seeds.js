@@ -18,7 +18,7 @@ const clones = new Phenomenon({
 })
 
 const zoidBerg = new Pioneer({
-  title: 'Dr. Zoidberg',
+  pioneerName: 'Dr. Zoidberg',
   description: 'Lorem ipsum dolor amet lo-fi post-ironic brunch, plaid keytar ethical quinoa crucifix iceland 8-bit hell of jianbing four loko. ',
   phenomena: [antiGrav, clones],
 })
@@ -26,15 +26,14 @@ const zoidBerg = new Pioneer({
 const nicholas = new User({
   userName: 'Nicholas',
   password: 'BallinOuttaControl',
-  // ideas: [mars, tesla],
 })
 
 User.remove({})
   .then(() => nicholas.save())
-  .then(() => console.log('Successful Save'))
+  .then(() => console.log('Tasty Seeds!'))
   .then(() => mongoose.connection.close())
 
 Pioneer.remove({})
   .then(() => zoidBerg.save())
-  .then(() => console.log('Successful Save'))
+  .then(() => console.log('Tasty Seeds!'))
   .then(() => mongoose.connection.close())

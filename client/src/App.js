@@ -5,7 +5,8 @@ import Login from './components/Login';
 import Users from './components/Users';
 import PioneerList from './components/PioneerList';
 import Timeline from './components/Timeline';
-import PioneerBoard from './components/PioneerBoard';
+import StrangePhenomena from './components/StrangePhenomena';
+
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
             <Route exact path='/login' component={ Login } />
             <Route exact path='/users' component={ Users } />
             <Route exact path='/pioneers' component={ PioneerList } />
-            <Route exact path='/pioneers/:pioneerId' component={ PioneerBoard } />
+            <Route exact path='/pioneers/:pioneerId' component={ StrangePhenomena } />
             <Route exact path='/timeline' component={ Timeline } />
          </Switch>
         </Router>

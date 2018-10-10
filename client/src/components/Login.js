@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import NavbarTwo from './NavbarTwo'
+import Navbar from './Navbar'
 
 ///////////////////////////////////////////////////////////
 
@@ -60,7 +60,7 @@ export default class Login extends Component {
 
         return (
             <StyledLogin>
-                <NavbarTwo />
+                <Navbar />
                 <h1>Join Our Community</h1>
                 <form onSubmit={this.handleSubmit} >
                     <input 
@@ -89,11 +89,6 @@ export default class Login extends Component {
                     value="Create New User" 
                     />
                 </form>
-
-                <StyledLink to={`/users/`} >Users</StyledLink>
-
-
-                {/* {usersList} */}
             </StyledLogin>
         )
     }

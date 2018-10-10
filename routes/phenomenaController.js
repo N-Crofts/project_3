@@ -1,13 +1,13 @@
 const router = require('express').Router({ mergeParams: true })
-const { Pioneer, Phenomena } = require('../db/model')
+const { Pioneer, Phenomenon } = require('../db/model')
 
 ////////////////////  C R E A T E  ////////////////////////
 
 router.post('/', (req, res) => {
-    const newPhenomena = new Phenomena()
+    const newPhenomenon = new Phenomenon()
     Pioneer.findById(req.params.pioneerId)
         .then((pioneer) => {
-            pioneer.phenomena.push(newPhenomena)
+            pioneer.phenomena.push(newPhenomenon)
             return pioneer.save()
         })
         .then((pioneer) => {
@@ -20,15 +20,15 @@ router.post('/', (req, res) => {
 router.put('/:id', (req,res) => {
     Pioneer.findById(req.params.pioneerId)
     .then(pioneer => {
-        const phenomena = pioneer.phenomena.id(req.params.id)
-        const updatedPhenomena = req.body
+        const phenomenon = pioneer.phenomena.id(req.params.id)
+        const updatedPhenomenon = req.body
 
-        if (updatedPhenomena.title) {
-            phenomena.title = updatedPhenomena.title
+        if (updatedPhenomenon.title) {
+            phenomenon.title = updatedPhenomenon.title
         }
 
-        if (updatedPhenomena.description) {
-            phenomena.description = updatedPhenomena.description
+        if (updatedPhenomenon.description) {
+            phenomenon.description = updatedPhenomenon.description
         }
         return pioneer.save()
     })
