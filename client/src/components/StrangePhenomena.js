@@ -11,11 +11,11 @@ text-wrap: normal;
 `
 
 const StyledPhenomenon = styled.div`
-background-color: #cfd8dc;
+background-color: #b3cde0;
 margin: 30px;
 padding: 10px;
 text-wrap: normal;
-box-shadow: 6px 6px 6px #6497b1;
+box-shadow: 7px 7px 7px #2a4863;
 
 div {
   font-size: 14px;
@@ -28,6 +28,7 @@ div {
 }
 
 #phenomenon-title {
+  color: #363636;
   font-weight: 700;
   margin: 0 0 10px 0;
   span {
@@ -39,11 +40,24 @@ div {
 #phenomenon-description {
   display: flex;
   flex-wrap: wrap;
-  height: 100px;
+  height: 300px;
+  padding: 15px;
   text-wrap: normal;
+  color: #363636;
+}
 
+textarea {
+  border: none;
+  border-bottom: 1px solid #444444;
+}
+
+.containerFooter {
+  font-size: 12px;
+  letter-spacing: 0.2vw;
+  color: #5a5a5a;
 }
 `
+
 
 export default class StrangePhenomena extends Component {
   state = {
@@ -98,7 +112,7 @@ export default class StrangePhenomena extends Component {
         <textarea type='text' id="phenomenon-description" name='description' value={phenomenon.description}
           onChange={(event) => this.handleChange(event, i)} 
           onBlur={() => this.updatePhenomenon(i)}  />
-        <span onClick={() => this.handleDelete(phenomenon._id)} >x</span>
+        <span class="containerFooter" onClick={() => this.handleDelete(phenomenon._id)} >x  delete this story</span>
       </StyledPhenomenon>
     })
     
@@ -107,37 +121,37 @@ export default class StrangePhenomena extends Component {
           <head>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script>
           </head>
-          <body>
+          <body class="bodyTwo">
             <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
-            <div class="navbar">
-              <ul class="navbar-container">
-                <li><a href="/" class="left-underline nav-button brand-logo"> POLARIS</a></li>
-                <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Timeline</a></li>
-                <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Pioneers</a></li>
-                <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Phenomena</a></li>
+            <div class="navbarTwo">
+              <ul class="navbar-containerTwo">
+                <li><a href="/" class="left-underlineTwo nav-buttonTwo brand-logoTwo"> POLARIS</a></li>
+                <li class="nav-itemTwo"><a href="#section-3Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Timeline</a></li>
+                <li class="nav-itemTwo"><a href="#section-2Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Pioneers</a></li>
+                <li class="nav-itemTwo active"><a href="#section-1Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Phenomena</a></li>
              </ul>
             </div>
-            <div class="parallax p1" id="section-1">
-              <hgroup>
-                <h1>{this.state.pioneer.pioneerName}</h1>
-              </hgroup>
+            <div class="parallaxTwo pTwo1" id="section-1Two">
+              <hgroup2>
+                <h3>{this.state.pioneer.pioneerName}</h3>
+              </hgroup2>
             </div>
-            <div class="row">
-              <div class="col-1">
+            <div class="rowTwo">
+              <div class="col-1Two">
                 <button onClick={this.handleNew}>Add Phenomenon</button>
-                <StyledPhenomenonContainer>
-                  {phenomenaList}
-                </StyledPhenomenonContainer>
+                  <StyledPhenomenonContainer>
+                    {phenomenaList}
+                  </StyledPhenomenonContainer>
               </div>
             </div>
-            <div class="parallax p2" id="section-2"></div>
-          <footer>
-            <div class="row" id="section-3">
-              <div class="col-3">
+            <div class="parallaxTwo pTwo2" id="section-2Two"></div>
+          <footer2>
+            <div class="rowTwo" id="section-3Two">
+              <div class="col-3Two">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
               </div>
             </div>
-          </footer>
+          </footer2>
           </body>
         </div>
       )
