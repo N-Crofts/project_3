@@ -17,7 +17,8 @@
     "dotenv": "^6.0.0",
     "express": "~4.16.0",
     "mongoose": "^5.3.1",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "sweetalert": "^2.1.0"
   },
   "engines": {
     "node": "8.6.0"
