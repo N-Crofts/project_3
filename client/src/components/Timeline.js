@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
-import styled from 'styled-components'
 
 export default class Timeline extends Component {
   render() {
@@ -12,6 +10,7 @@ export default class Timeline extends Component {
         <h3>
         Timeline of motor and engine technology
         </h3>
+        
         <ul>
         <li>(c. 30–70 AD) – Hero of Alexandria describes the first documented steam-powered device, the aeolipile.</li>
         <li>13th century - Chinese chronicles wrote about a solid rocket motor used in warfare</li>

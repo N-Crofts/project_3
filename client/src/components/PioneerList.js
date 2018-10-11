@@ -2,11 +2,10 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Navbar from './Navbar'
 
 const StyledLink = styled(Link)`
 text-decoration: none;
-color: rgb(10,10,10);
+color: #fff;
 `
 
 export default class PioneerList extends Component {
@@ -40,16 +39,13 @@ export default class PioneerList extends Component {
     render() {
         const pioneersList = this.state.pioneers.map((pioneer, i) => {
             return (<div key={i}>
-            <StyledLink to={`/pioneers/${pioneer._id}`} > - {pioneer.pioneerName}</StyledLink>
+            <StyledLink to={`/pioneers/${pioneer._id}`} >{pioneer.pioneerName}</StyledLink>
             </div>)
         })
+
     return (
       <div>
-         <Navbar/>
-
          {pioneersList}
-         
-
       </div>
     )
   }

@@ -1,41 +1,62 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import Navbar from './Navbar'
-import styled from 'styled-components'
+import PioneerList from './PioneerList'
 
-const StyledHome = styled.div`
-
-.landingTitle {
-    text-align: center;
-}
-
-h1 {
-    font-size: 45px;
-    letter-spacing: 30px;
-}
-p {
-    font-size: 20px;
-    letter-spacing: 4px;
-}
-`
-const StyledLink = styled(Link)`
-text-decoration: none;
-color: rgb(10,10,10);
-`
 
 export default class Home extends Component {
-    render() {
-      return (
-        <StyledHome>
-          <Navbar />
-          <div class="landingTitle">
-          <h1>POLARIS</h1>
-            <p>an archive of brilliant minds, strange phenomena, and hidden history.</p>
-          </div>
-          <h5 class="center-align">
-          <StyledLink to={`/login/`} >sign up </StyledLink>
-          </h5>
-        </StyledHome>
+      render() {
+        return (
+          <div>
+
+
+<html>
+<head>
+  <title>Parallax Template - uplusion23</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script>
+</head>
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
+  <div class="navbar">
+    <ul class="navbar-container">
+      <li><a href="/" class="left-underline nav-button brand-logo"> POLARIS</a></li>
+      <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Timeline</a></li>
+      <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Pioneers</a></li>
+      <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Phenomena</a></li>
+    </ul>
+  </div>
+  <div class="parallax p1" id="section-1">
+    <hgroup>
+      <h1>POLARIS</h1>
+    </hgroup>
+  </div>
+  <div class="row">
+    <div class="col-1">
+    <div class="polarisSub">An archive of brilliant minds, strange phenomena, and hidden history.</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet est id leo facilisis, quis egestas erat vehicula. Aenean nec facilisis leo, et tristique lorem. Aliquam porttitor, elit ac ornare lacinia, sapien augue sagittis dolor, tempor ultricies lorem arcu et ante. Nulla facilisi. Praesent facilisis lacus at blandit maximus. Ut at libero nisi. Cras eu augue tellus. Nam pretium eget nisi non viverra. Maecenas eget tincidunt nibh, vitae interdum dolor.</p>
+      </div>
+
+  </div>
+  <div class="parallax p2" id="section-2">
+    <hgroup>
+      <h3>Pioneers of High Strangeness</h3>
+      <div class="madScience">        
+        <PioneerList />
+      </div>
+    </hgroup>
+  </div>
+
+
+  <footer>
+    <div class="row" id="section-3">
+      <div class="col-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>
+
+         </div>
       )
     }
   }
