@@ -33,7 +33,7 @@ router.put('/:id', async (req, res) => {
 /////////////////////  D E L E T E  /////////////////////////
 
 router.delete('/:id', async (req, res) => {
-    await Pioneer.findByIdAndRemove(req.params.id)
+    const pioneer = await Pioneer.findByIdAndRemove(req.params.id)
     res.sendStatus(200)
 })
 

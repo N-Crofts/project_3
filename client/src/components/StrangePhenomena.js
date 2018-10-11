@@ -30,7 +30,10 @@ div {
 #phenomenon-title {
   color: #363636;
   font-weight: 700;
+  letter-spacing: 0.5vw;
+  padding-left: 15px;
   margin: 0 0 10px 0;
+  border-bottom: none;
   span {
     float: right;
     display: none;
@@ -40,7 +43,7 @@ div {
 #phenomenon-description {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
+  height: 200px;
   padding: 15px;
   text-wrap: normal;
   color: #363636;
