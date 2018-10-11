@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+
 const StyledLink = styled(Link)`
 text-decoration: none;
 color: #fff;
@@ -40,8 +41,10 @@ export default class PioneerList extends Component {
 
     handleDelete = async (pioneerId) => {
         console.log('initiating delete')
-        const response = await axios.delete(`/api/pioneers/${pioneerId}`)
-        this.setState({ pioneer: response.data })
+        const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
+        const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
+        // const getResponse = await axios.get('/api/pioneers')
+        this.setState({ pioneers: filteredPioneers })
     }
 
     /////////////////////////////////////////////////////////
@@ -51,7 +54,8 @@ export default class PioneerList extends Component {
             return (
                 <div key={i}>
                     <StyledLink to={`/pioneers/${pioneer._id}`} >{pioneer.pioneerName}</StyledLink>
-                    <button onClick={() => this.handleDelete(pioneer._id)}>delete</button>
+                    <button onClick={() => this.handleDelete(pioneer._id)}>delete
+                    </button>
                 </div>
             )
         })
@@ -73,5 +77,4 @@ export default class PioneerList extends Component {
         )
     }
 }
-
 
