@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
+import swal from 'sweetalert';
 
 const StyledLink = styled(Link)`
 text-decoration: none;
@@ -40,12 +40,29 @@ export default class PioneerList extends Component {
     //////////////// H A N D L E   D E L E T E //////////////
 
     handleDelete = async (pioneerId) => {
-        console.log('initiating delete')
+        swal({
+            title: "Delete?",
+            text: "Are you sure you want to delete this Pioneer of High Strangeness?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              swal("Delete Complete!", {
+                icon: "success"})
+              .then( async () => {
         const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
         const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
         // const getResponse = await axios.get('/api/pioneers')
         this.setState({ pioneers: filteredPioneers })
-    }
+    })
+} else {
+  swal("Delete Canceled!");
+}
+})
+}
+
 
     /////////////////////////////////////////////////////////
 
@@ -77,4 +94,6 @@ export default class PioneerList extends Component {
         )
     }
 }
+
+
 
