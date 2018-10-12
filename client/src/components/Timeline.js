@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
+import styled from 'styled-components'
+
+const StyledTimeline = styled.div`
+
+`
+
 
 export default class Timeline extends Component {
   render() {

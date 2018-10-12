@@ -420,3 +420,9 @@ footerTwo p {
   color: #ececec;
 }
 
+.newFooter {
+  display: flex;
+  justify-content: center;
+  padding-left: 2.5%;
+  font-size: 2.25vw;
+}

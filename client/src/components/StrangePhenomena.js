@@ -140,9 +140,7 @@ export default class StrangePhenomena extends Component {
             <div class="navbarTwo">
               <ul class="navbar-containerTwo">
                 <li><a href="/" class="left-underlineTwo nav-buttonTwo brand-logoTwo"> P O L A R I S</a></li>
-                <li class="nav-itemTwo"><a href="/timeline" class="left-underlineTwo nav-buttonTwo" data-scroll>Timeline</a></li>
                 <li class="nav-itemTwo"><a href="javascript:history.back()" class="left-underlineTwo nav-buttonTwo" data-scroll>Pioneers</a></li>
-                {/* <li class="nav-itemTwo active"><a href="#section-1Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Phenomena</a></li> */}
              </ul>
             </div>
             <div class="parallaxTwo pTwo1" id="section-1Two">
@@ -162,12 +160,22 @@ export default class StrangePhenomena extends Component {
           <footer2>
             <div class="rowTwo" id="section-3Two">
               <div class="col-3Two">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
+              <div class="newFooter">
+                              <div><a href="mailto:nicholas.crofts@gmail.com" target="_blank" class="nav-button">Email</a>  
+</div>
+
+            
+              <div><a href="https://github.com/N-Crofts/project_3" target="_blank" class="nav-button" data-scroll>GitHub</a></div>
+              <div><a href="https://twitter.com/NicholasCrofts" target="_blank" class="nav-button" data-scroll>Twitter</a></div>
+
+              <div><a href="#" target="_blank" class="nav-button" data-scroll>Instagram</a></div>
               </div>
+
             </div>
-          </footer2>
-          </body>
-        </div>
-      )
-    }
+          </div>
+        </footer2>
+        </body>
+      </div>
+    )
   }
+}

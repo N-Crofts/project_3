@@ -13,9 +13,8 @@ export default class Home extends Component {
           <div class="navbar">
             <ul class="navbar-container">
               <li><a href="/" class="left-underline nav-button brand-logo"> P O L A R I S</a></li>
-              <li class="nav-item"><a href="/timeline" class="left-underline nav-button" data-scroll>Timeline</a></li>
+              {/* <li class="nav-item"><a href="https://github.com/N-Crofts/project_3" target="_blank" class="left-underline nav-button" data-scroll>GitHub</a></li> */}
               <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Pioneers</a></li>
-              {/* <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Phenomena</a></li> */}
             </ul>
           </div>
           <div class="parallax p1" id="section-1">
@@ -26,7 +25,7 @@ export default class Home extends Component {
           <div class="row">
             <div class="col-1">
               <div class="polarisSub">An archive of brilliant minds, strange phenomena, and hidden history.</div>
-                <p>Antigravity, mind control, bizarre medical experiements ... another world of high strangeness lies just behind the facade of the ordinary. Begin your journey below - click on the list of pioneers below to reveal the true(?) tales of very real explorers into the unknown. But be warned ... there is knowledge out there that cannot be unlearned, some sights that cannont be unseen. Welcome to POLARIS.</p>
+                <p>Antigravity, mind control, bizarre medical experiements ... another world of high strangeness lies just behind the facade of the ordinary. Begin your journey below - click on the list of pioneers to reveal the true(?) tales of very real explorers into the unknown. But be warned ... there is knowledge out there that cannot be forgotten, some sights that cannot be unseen. Welcome to POLARIS.</p>
               </div>
           </div>
           <div class="parallax p2" id="section-2">
@@ -40,7 +39,19 @@ export default class Home extends Component {
         <footer>
           <div class="row" id="section-3">
             <div class="col-3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
+
+
+      <div class="newFooter">
+                              <div><a href="mailto:nicholas.crofts@gmail.com" target="_blank" class="nav-button">Email</a>  
+</div>
+
+            
+              <div><a href="https://github.com/N-Crofts/project_3" target="_blank" class="nav-button" data-scroll>GitHub</a></div>
+              <div><a href="https://twitter.com/NicholasCrofts" target="_blank" class="nav-button" data-scroll>Twitter</a></div>
+
+              <div><a href="#" target="_blank" class="nav-button" data-scroll>Instagram</a></div>
+              </div>
+
             </div>
           </div>
         </footer>
