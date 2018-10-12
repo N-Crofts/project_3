@@ -26,7 +26,7 @@ export default class Home extends Component {
           <div class="row">
             <div class="col-1">
               <div class="polarisSub">An archive of brilliant minds, strange phenomena, and hidden history.</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet est id leo facilisis, quis egestas erat vehicula. Aenean nec facilisis leo, et tristique lorem. Aliquam porttitor, elit ac ornare lacinia, sapien augue sagittis dolor, tempor ultricies lorem arcu et ante. Nulla facilisi. Praesent facilisis lacus at blandit maximus. Ut at libero nisi. Cras eu augue tellus. Nam pretium eget nisi non viverra. Maecenas eget tincidunt nibh, vitae interdum dolor.</p>
+                <p>Antigravity, mind control, bizarre medical experiements ... another world of high strangeness lies just behind the facade of the ordinary. Begin your journey below - click on the list of pioneers below to reveal the true(?) tales of very real explorers into the unknown. But be warned ... there is knowledge out there that cannot be unlearned, some sights that cannont be unseen. Welcome to POLARIS.</p>
               </div>
           </div>
           <div class="parallax p2" id="section-2">
