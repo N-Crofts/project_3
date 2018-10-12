@@ -1,5 +1,4 @@
 body {
-  /* background-color: #b3cde0; */
   background: url(https://hdqwalls.com/wallpapers/abstract-blue-lights-blur-eu.jpg) no-repeat fixed 50% 0;
   padding: 0;
   margin: 0;
@@ -10,8 +9,6 @@ body {
   font-family: 'Roboto';
 }
 .bodyTwo {
-  /* background-color: #3f7eac; */
-  /* background: url(https://hdqwalls.com/download/blue-texture-pf-1920x1080.jpg) no-repeat fixed 50% 0; */
   background: url(https://hdqwalls.com/wallpapers/abstract-blue-lights-blur-eu.jpg) no-repeat fixed 50% 0;
 }
 .left-underline {
@@ -211,7 +208,6 @@ li.active > a.nav-buttonTwo {
   height: 80vh;
 }
 .parallaxTwo.pTwo2 {
-  /* background: url(https://hdqwalls.com/wallpapers/mirrors-edge-city-of-glass.jpg) no-repeat fixed 50% 0; */
   background: url(https://hdqwalls.com/wallpapers/scifi-future-city-top-view-vehicles-art-fj.jpg) no-repeat fixed 50% 0;
 
   background-size: cover;
@@ -265,7 +261,6 @@ hgroup{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  /* background-color: rgba(0,0,0,.6); */
   background: rgb(2,31,66);
 background: radial-gradient(circle, rgba(2,31,66,0.8477766106442577) 0%, rgba(14,42,91,0.8141631652661064) 35%, rgba(67,116,191,0.07466736694677867) 100%);
 
@@ -282,7 +277,6 @@ hgroup2{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  /* background-color: rgba(16,78,139,.6); */
   background: rgb(1,12,24);
   background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(48,82,134,0.07466736694677867) 100%);
   z-index: 2;
@@ -298,7 +292,6 @@ hgroup0{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  /* background-color: rgba(16,78,139,.6); */
   background: rgb(1,12,24);
 background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(29,49,80,0.3715861344537815) 100%);
   z-index: 2;
