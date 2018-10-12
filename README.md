@@ -1,6 +1,6 @@
-# P O L A R I S
+# P  O  L  A  R  I  S
 
-#### An archive of brilliant minds, strange phenomena, and hidden history
+#### *An archive of brilliant minds, strange phenomena, and hidden history*
 
 ------
 ------
@@ -12,7 +12,7 @@ https://ancient-sierra-26743.herokuapp.com/
 https://trello.com/b/LtH2KCtC/project03
 
 ###### BUILT WITH:
-..* ReactJS
+* ![alt text](https://quintagroup.com/cms/js/js-image/react.js-logo.png/image)
 
 
 
@@ -23,3 +23,5 @@ https://trello.com/b/LtH2KCtC/project03
 ![alt text](https://i.imgur.com/2sJIi9c.jpg)
 
 ![alt text](https://i.imgur.com/bwirlhh.jpg)
+
+:alien:
