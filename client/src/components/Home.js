@@ -12,10 +12,10 @@ export default class Home extends Component {
           <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
           <div class="navbar">
             <ul class="navbar-container">
-              <li><a href="/" class="left-underline nav-button brand-logo"> POLARIS</a></li>
-              <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Timeline</a></li>
+              <li><a href="/" class="left-underline nav-button brand-logo"> P O L A R I S</a></li>
+              <li class="nav-item"><a href="/timeline" class="left-underline nav-button" data-scroll>Timeline</a></li>
               <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Pioneers</a></li>
-              <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Phenomena</a></li>
+              {/* <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Phenomena</a></li> */}
             </ul>
           </div>
           <div class="parallax p1" id="section-1">

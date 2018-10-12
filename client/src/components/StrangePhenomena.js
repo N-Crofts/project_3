@@ -139,10 +139,10 @@ export default class StrangePhenomena extends Component {
             <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
             <div class="navbarTwo">
               <ul class="navbar-containerTwo">
-                <li><a href="/" class="left-underlineTwo nav-buttonTwo brand-logoTwo"> POLARIS</a></li>
-                <li class="nav-itemTwo"><a href="#section-3Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Timeline</a></li>
-                <li class="nav-itemTwo"><a href="#section-2Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Pioneers</a></li>
-                <li class="nav-itemTwo active"><a href="#section-1Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Phenomena</a></li>
+                <li><a href="/" class="left-underlineTwo nav-buttonTwo brand-logoTwo"> P O L A R I S</a></li>
+                <li class="nav-itemTwo"><a href="/timeline" class="left-underlineTwo nav-buttonTwo" data-scroll>Timeline</a></li>
+                <li class="nav-itemTwo"><a href="javascript:history.back()" class="left-underlineTwo nav-buttonTwo" data-scroll>Pioneers</a></li>
+                {/* <li class="nav-itemTwo active"><a href="#section-1Two" class="left-underlineTwo nav-buttonTwo" data-scroll>Phenomena</a></li> */}
              </ul>
             </div>
             <div class="parallaxTwo pTwo1" id="section-1Two">
