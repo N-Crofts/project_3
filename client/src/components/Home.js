@@ -31,7 +31,7 @@ export default class Home extends Component {
           </div>
           <div class="parallax p2" id="section-2">
             <hgroup0>
-              <h3>Pioneers of High Strangeness</h3>
+              <div class="strange">Pioneers of High Strangeness</div>
               <div class="madScience">        
                 <PioneerList />
               </div>

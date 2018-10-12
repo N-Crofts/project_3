@@ -104,7 +104,7 @@ export default class PioneerList extends Component {
             <div>
                 {pioneersList}
                 <form onSubmit={this.handleSubmit}>
-                    <input
+                    <input class="enterHere"
                         type='text'
                         name='pioneerName'
                         placeholder='e n t e r   n a m e   h e r e'

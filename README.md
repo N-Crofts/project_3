@@ -5,3 +5,5 @@ POLARIS
 An archive of brilliant minds, strange phenomena, and hidden history
 
 ![alt text](https://i.imgur.com/2sJIi9c.jpg)
+
+![alt text](https://i.imgur.com/bwirlhh.jpg)
