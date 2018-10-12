@@ -30,12 +30,12 @@ export default class Home extends Component {
               </div>
           </div>
           <div class="parallax p2" id="section-2">
-            <hgroup>
+            <hgroup0>
               <h3>Pioneers of High Strangeness</h3>
               <div class="madScience">        
                 <PioneerList />
               </div>
-            </hgroup>
+            </hgroup0>
           </div>
         <footer>
           <div class="row" id="section-3">

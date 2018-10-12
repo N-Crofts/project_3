@@ -5,9 +5,32 @@ import styled from 'styled-components'
 import swal from 'sweetalert';
 
 const StyledLink = styled(Link)`
-text-decoration: none;
-color: #fff;
+    text-decoration: none;
+    color: #fff;
 `
+
+const StyledButton = styled.button`
+    position: absolute;
+    left: 85%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    margin: 5px;
+    font-size: 12px;
+    color: #b1b7bc;
+    padding: 0.75em;
+`
+
+const StyledSubmit = styled.input`
+    position: relative;
+    left: 34%;
+    background-color: rgba(228, 241, 254, 0.1);
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 12px;
+    color: #b1b7bc;
+    padding: 0.75em;
+`
+
 
 export default class PioneerList extends Component {
     state = {
@@ -46,22 +69,22 @@ export default class PioneerList extends Component {
             icon: "warning",
             buttons: true,
             dangerMode: true,
-          })
-          .then((willDelete) => {
+        })
+            .then((willDelete) => {
             if (willDelete) {
-              swal("Delete Complete!", {
-                icon: "success"})
-              .then( async () => {
-        const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
-        const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
-        // const getResponse = await axios.get('/api/pioneers')
-        this.setState({ pioneers: filteredPioneers })
-    })
-} else {
-  swal("Delete Canceled!");
-}
-})
-}
+                swal("Delete Complete!", {
+                  icon: "success"})
+                .then( async () => {
+                  const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
+                  const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
+                  // const getResponse = await axios.get('/api/pioneers')
+                  this.setState({ pioneers: filteredPioneers })
+                })
+            } else {
+                swal("Delete Canceled!");
+            }
+            })
+    }
 
 
     /////////////////////////////////////////////////////////
@@ -71,8 +94,8 @@ export default class PioneerList extends Component {
             return (
                 <div key={i}>
                     <StyledLink to={`/pioneers/${pioneer._id}`} >{pioneer.pioneerName}</StyledLink>
-                    <button onClick={() => this.handleDelete(pioneer._id)}>delete
-                    </button>
+                    <StyledButton onClick={() => this.handleDelete(pioneer._id)}>X
+                    </StyledButton>
                 </div>
             )
         })
@@ -88,12 +111,10 @@ export default class PioneerList extends Component {
                         value={this.state.newPioneer.pioneerName}
                         onChange={this.handleChange}
                     />
-                    <input type='submit' value='Create New Pioneer' />
+                    <StyledSubmit type='submit' value='c r e a t e   n e w   p i o n e e r' />
                 </form>
             </div>
         )
     }
 }
-
-
 

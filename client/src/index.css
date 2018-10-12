@@ -1,6 +1,6 @@
 body {
-  background-color: #b3cde0;
-  color: #444444;
+  /* background-color: #b3cde0; */
+  background: url(https://hdqwalls.com/wallpapers/abstract-blue-lights-blur-eu.jpg) no-repeat fixed 50% 0;
   padding: 0;
   margin: 0;
   perspective: 1px;
@@ -10,7 +10,9 @@ body {
   font-family: 'Roboto';
 }
 .bodyTwo {
-  background-color: #3f7eac;
+  /* background-color: #3f7eac; */
+  /* background: url(https://hdqwalls.com/download/blue-texture-pf-1920x1080.jpg) no-repeat fixed 50% 0; */
+  background: url(https://hdqwalls.com/wallpapers/abstract-blue-lights-blur-eu.jpg) no-repeat fixed 50% 0;
 }
 .left-underline {
   display: inline-block;
@@ -90,7 +92,7 @@ div.navbarTwo {
   top: 0;
   left: 0;
   width: 100%;
-  background: #3f7eac;
+  background: #6497b1;
   -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.75);
@@ -190,7 +192,7 @@ li.active > a.nav-buttonTwo {
   letter-spacing: 3vw;
 }
 .parallaxTwo.pTwo1 {
-  background: url(https://www.oboinastol.com/uploads/posts/oboinastol.com_441.jpg) no-repeat fixed 50% 0;
+  background: url(https://hdqwalls.com/wallpapers/scifi-future-city-top-view-vehicles-art-fj.jpg) no-repeat fixed 50% 0;
   background-size: cover;
   color: #fff;
   font-size: 3em;
@@ -208,7 +210,9 @@ li.active > a.nav-buttonTwo {
   color: #fff;
 }
 .parallaxTwo.pTwo2 {
-  background: url(https://www.oboinastol.com/uploads/posts/oboinastol.com_441.jpg) no-repeat fixed 50% 0;
+  /* background: url(https://hdqwalls.com/wallpapers/mirrors-edge-city-of-glass.jpg) no-repeat fixed 50% 0; */
+  background: url(https://hdqwalls.com/wallpapers/scifi-future-city-top-view-vehicles-art-fj.jpg) no-repeat fixed 50% 0;
+
   background-size: cover;
   color: #fff;
 }
@@ -260,7 +264,10 @@ hgroup{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  background-color: rgba(0,0,0,.6);
+  /* background-color: rgba(0,0,0,.6); */
+  background: rgb(2,31,66);
+background: radial-gradient(circle, rgba(2,31,66,0.8477766106442577) 0%, rgba(14,42,91,0.8141631652661064) 35%, rgba(67,116,191,0.07466736694677867) 100%);
+
   z-index: 2;
 }
 hgroup2{
@@ -274,7 +281,25 @@ hgroup2{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  background-color: rgba(0,0,0,.3);
+  /* background-color: rgba(16,78,139,.6); */
+  background: rgb(1,12,24);
+  background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(48,82,134,0.07466736694677867) 100%);
+  z-index: 2;
+}
+hgroup0{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  border: 1px;
+  border-radius: 15px;
+  padding: .5em 3em;
+  /* background-color: rgba(16,78,139,.6); */
+  background: rgb(1,12,24);
+background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(29,49,80,0.3715861344537815) 100%);
   z-index: 2;
 }
 .row {
@@ -339,7 +364,7 @@ footer2 {
   padding-left: 12%;
   padding-right: 15%;
   display: block;
-  background-color: #3f7eac;
+  background-color: #6497b1;
   overflow: hidden;
   color: #fff;
 }
@@ -383,3 +408,4 @@ footerTwo p {
   text-indent: 20px;
   color: #ececec;
 }
+

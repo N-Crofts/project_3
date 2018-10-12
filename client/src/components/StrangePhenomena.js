@@ -8,10 +8,11 @@ flex-direction: column;
 flex-wrap: wrap;
 justify-content: flex-start;
 text-wrap: normal;
+padding-top: 27px;
 `
 
 const StyledPhenomenon = styled.div`
-background-color: #b3cde0;
+background-color: rgba(226,240,255,0.6);
 margin: 30px;
 padding: 10px;
 text-wrap: normal;
@@ -59,6 +60,16 @@ textarea {
   letter-spacing: 0.2vw;
   color: #5a5a5a;
 }
+`
+const StyledButton = styled.button`
+    position: absolute;
+    left: 45%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    /* margin: 5px; */
+    font-size: 15px;
+    color: #262626;
+    padding: 0.75em;
 `
 
 
@@ -141,7 +152,7 @@ export default class StrangePhenomena extends Component {
             </div>
             <div class="rowTwo">
               <div class="col-1Two">
-                <button onClick={this.handleNew}>Add Phenomenon</button>
+                <StyledButton onClick={this.handleNew}>Add Phenomenon</StyledButton>
                   <StyledPhenomenonContainer>
                     {phenomenaList}
                   </StyledPhenomenonContainer>
