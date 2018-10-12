@@ -102,6 +102,7 @@ export default class StrangePhenomena extends Component {
   
   componentDidMount = () => {
     this.getPioneer()
+    window.scrollTo(0, 0)
   }
   
   handleChange = (event, i) => {

@@ -77,7 +77,6 @@ export default class PioneerList extends Component {
                 .then( async () => {
                   const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
                   const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
-                  // const getResponse = await axios.get('/api/pioneers')
                   this.setState({ pioneers: filteredPioneers })
                 })
             } else {

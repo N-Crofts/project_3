@@ -13,7 +13,6 @@ export default class Home extends Component {
           <div class="navbar">
             <ul class="navbar-container">
               <li><a href="/" class="left-underline nav-button brand-logo"> P O L A R I S</a></li>
-              {/* <li class="nav-item"><a href="https://github.com/N-Crofts/project_3" target="_blank" class="left-underline nav-button" data-scroll>GitHub</a></li> */}
               <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Pioneers</a></li>
             </ul>
           </div>
