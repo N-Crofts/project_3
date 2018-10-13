@@ -41,7 +41,7 @@ export default class Home extends Component {
 
 
       <div class="newFooter">
-                              <div><a href="mailto:nicholas.crofts@gmail.com" target="_blank" class="nav-button">Email</a>  
+                              <div><a href="mailto:nicholas.crofts@gmail.com" class="nav-button">Email</a>  
 </div>
 
             

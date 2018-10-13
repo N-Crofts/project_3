@@ -96,7 +96,7 @@ export default class PioneerList extends Component {
         const pioneersList = this.state.pioneers.map((pioneer, i) => {
             return (
                 <div key={i}>
-                    <StyledLink to={`/pioneers/${pioneer._id}`} >{pioneer.pioneerName}</StyledLink>
+                    <StyledLink to={`/pioneers/${pioneer._id}`} > &#183; {pioneer.pioneerName}</StyledLink>
                     <StyledButton onClick={() => this.handleDelete(pioneer._id)}>X
                     </StyledButton>
                 </div>
@@ -105,7 +105,11 @@ export default class PioneerList extends Component {
 
         return (
             <div>
+                <ul>
+                    
                 {pioneersList}
+                
+                </ul>
                 <form onSubmit={this.handleSubmit}>
                     <input class="enterHere"
                         type='text'

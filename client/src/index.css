@@ -417,5 +417,7 @@ footerTwo p {
   display: flex;
   justify-content: center;
   padding-left: 2.5%;
-  font-size: 2.25vw;
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  letter-spacing: 0.4vw;
 }
+
