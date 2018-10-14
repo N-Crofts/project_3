@@ -7,6 +7,10 @@ import swal from 'sweetalert';
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: #fff;
+    &:hover {
+    color: cyan;
+    text-decoration: none;
+  }
 `
 
 const StyledButton = styled.button`
@@ -18,6 +22,10 @@ const StyledButton = styled.button`
     font-size: 8px;
     color: #b1b7bc;
     padding: 0.75em;
+    &:hover {
+    color: red;
+    border-color: red;
+  }
 `
 
 const StyledSubmit = styled.input`
@@ -29,6 +37,10 @@ const StyledSubmit = styled.input`
     font-size: 12px;
     color: #b1b7bc;
     padding: 0.75em;
+    &:hover {
+    color: cyan;
+    border-color: cyan;
+  }
 `
 
 

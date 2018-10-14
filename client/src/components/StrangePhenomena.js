@@ -162,14 +162,14 @@ export default class StrangePhenomena extends Component {
             <div class="rowTwo" id="section-3Two">
               <div class="col-3Two">
               <div class="newFooter">
-                              <div><a href="mailto:nicholas.crofts@gmail.com" target="_blank" class="nav-button">Email</a>  
-</div>
+              <ul>
+        <li><a href="mailto:nicholas.crofts@gmail.com"><i class="fa fa-envelope"></i></a></li>
 
-            
-              <div><a href="https://github.com/N-Crofts/project_3" target="_blank" class="nav-button" data-scroll>GitHub</a></div>
-              <div><a href="https://twitter.com/NicholasCrofts" target="_blank" class="nav-button" data-scroll>Twitter</a></div>
-
-              <div><a href="#" target="_blank" class="nav-button" data-scroll>Instagram</a></div>
+    <li><a href="https://github.com/N-Crofts/project_3" target="_blank"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/N-Crofts" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://twitter.com/NicholasCrofts" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="http://www.instagram.com/nico_laos" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+</ul>
               </div>
 
             </div>

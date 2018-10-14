@@ -24,7 +24,8 @@ export default class Home extends Component {
           <div class="row">
             <div class="col-1">
               <div class="polarisSub">An archive of brilliant minds, strange phenomena, and hidden history.</div>
-                <p>Antigravity, mind control, bizarre medical experiements ... another world of high strangeness lies just behind the facade of the ordinary. Begin your journey below - click on the list of pioneers to reveal the true(?) tales of very real explorers into the unknown. But be warned ... there is knowledge out there that cannot be forgotten, some sights that cannot be unseen. Welcome to POLARIS.</p>
+              <br></br>
+                <p class="polarisSubSubs">Antigravity, mind control, bizarre medical experiements ... another world of high strangeness lies just behind the facade of the ordinary. Begin your journey below - click on the list of pioneers to reveal the true(?) tales of very real explorers into the unknown. But be warned ... there is knowledge out there that cannot be forgotten, some sights that cannot be unseen. Welcome to POLARIS.</p>
               </div>
           </div>
           <div class="parallax p2" id="section-2">
@@ -41,14 +42,16 @@ export default class Home extends Component {
 
 
       <div class="newFooter">
-                              <div><a href="mailto:nicholas.crofts@gmail.com" class="nav-button">Email</a>  
-</div>
 
-            
-              <div><a href="https://github.com/N-Crofts/project_3" target="_blank" class="nav-button" data-scroll>GitHub</a></div>
-              <div><a href="https://twitter.com/NicholasCrofts" target="_blank" class="nav-button" data-scroll>Twitter</a></div>
+        <ul>
+        <li><a href="mailto:nicholas.crofts@gmail.com"><i class="fa fa-envelope"></i></a></li>
 
-              <div><a href="#" target="_blank" class="nav-button" data-scroll>Instagram</a></div>
+    <li><a href="https://github.com/N-Crofts/project_3" target="_blank"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/N-Crofts" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://twitter.com/NicholasCrofts" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="http://www.instagram.com/nico_laos" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+</ul>
+
               </div>
 
             </div>
@@ -59,3 +62,4 @@ export default class Home extends Component {
     )
   }
 }
+
