@@ -32,6 +32,6 @@ Antigravity, mind control, bizarre medical experiements ... another world of hig
 
 -----
 
-##### P O L A R I S *is an app created by Nicholas Crofts for the purpose of presenting skills learned in the Web Development Imerisive program at* General Assembly.
+##### P O L A R I S *is an app created by Nicholas Crofts for the purpose of presenting skills learned in the Web Development Imersive program at* General Assembly.
 
 :alien:
