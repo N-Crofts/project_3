@@ -17,24 +17,24 @@ router.post('/', (req, res) => {
 
 ////////////////////  U P D A T E  ////////////////////////
 
-router.put('/:id', (req,res) => {
+router.put('/:id', (req, res) => {
     Pioneer.findById(req.params.pioneerId)
-    .then(pioneer => {
-        const phenomenon = pioneer.phenomena.id(req.params.id)
-        const updatedPhenomenon = req.body
+        .then(pioneer => {
+            const phenomenon = pioneer.phenomena.id(req.params.id)
+            const updatedPhenomenon = req.body
 
-        if (updatedPhenomenon.title) {
-            phenomenon.title = updatedPhenomenon.title
-        }
+            if (updatedPhenomenon.title) {
+                phenomenon.title = updatedPhenomenon.title
+            }
 
-        if (updatedPhenomenon.description) {
-            phenomenon.description = updatedPhenomenon.description
-        }
-        return pioneer.save()
-    })
-    .then(pioneer => {
-        res.send(pioneer)
-    })
+            if (updatedPhenomenon.description) {
+                phenomenon.description = updatedPhenomenon.description
+            }
+            return pioneer.save()
+        })
+        .then(pioneer => {
+            res.send(pioneer)
+        })
 })
 
 ////////////////////  D E L E T E  ////////////////////////

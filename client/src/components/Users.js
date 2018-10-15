@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Navbar from './Navbar'
 
 const StyledLink = styled(Link)`
 text-decoration: none;
@@ -22,14 +21,13 @@ export default class Users extends Component {
     render() {
         const usersList = this.state.users.map((user, i) => {
             return (<div key={i}>
-            <StyledLink to={`/users/${user._id}`} > - {user.userName}</StyledLink>
+                <StyledLink to={`/users/${user._id}`} > - {user.userName}</StyledLink>
             </div>)
         })
-    return (
-      <div>
-         <Navbar/>
-         {usersList}
-      </div>
-    )
-  }
+        return (
+            <div>
+                {usersList}
+            </div>
+        )
+    }
 }

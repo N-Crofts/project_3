@@ -43,7 +43,6 @@ const StyledSubmit = styled.input`
   }
 `
 
-
 export default class PioneerList extends Component {
     state = {
         pioneers: [],
@@ -51,7 +50,6 @@ export default class PioneerList extends Component {
             pioneerName: ''
         }
     }
-
 
     componentDidMount = async () => {
         const response = await axios.get('/api/pioneers')
@@ -72,8 +70,6 @@ export default class PioneerList extends Component {
         this.setState({ pioneers })
     }
 
-    //////////////// H A N D L E   D E L E T E //////////////
-
     handleDelete = async (pioneerId) => {
         swal({
             title: "Delete?",
@@ -81,29 +77,22 @@ export default class PioneerList extends Component {
             icon: "warning",
             buttons: true,
             dangerMode: true,
-            // target: document.getElementById('section-2') 
         })
             .then((willDelete) => {
-            if (willDelete) {
-                swal("Delete Complete!", {
-                  icon: "success"})
-                .then( async () => {
-                  const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
-                  const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
-                  this.setState({ pioneers: filteredPioneers })
-                })
-            } else {
-                swal("Delete Canceled!");
-            }
+                if (willDelete) {
+                    swal("Delete Complete!", {
+                        icon: "success"
+                    })
+                        .then(async () => {
+                            const deleteResponse = await axios.delete(`/api/pioneers/${pioneerId}`)
+                            const filteredPioneers = this.state.pioneers.filter(pioneer => pioneerId !== pioneer._id)
+                            this.setState({ pioneers: filteredPioneers })
+                        })
+                } else {
+                    swal("Delete Canceled!");
+                }
             })
     }
-
-
-    // window.onbeforeunload = function () {
-    //     window.scrollTo(0, 0);
-    //   }
-
-    /////////////////////////////////////////////////////////
 
     render() {
         const pioneersList = this.state.pioneers.map((pioneer, i) => {
@@ -119,9 +108,7 @@ export default class PioneerList extends Component {
         return (
             <div>
                 <ul>
-                    
-                {pioneersList}
-                
+                    {pioneersList}
                 </ul>
                 <form onSubmit={this.handleSubmit}>
                     <input class="enterHere"

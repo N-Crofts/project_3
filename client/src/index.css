@@ -291,20 +291,15 @@ hgroup0{
   border-radius: 15px;
   padding: .5em 3em;
   margin-top: 80vh;
-  /* height: 80vh; */
   background: rgb(1,12,24);
   background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(29,49,80,0.3715861344537815) 100%);
   z-index: 2;
 }
 #section-2 {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
   background: url(https://i.imgur.com/dWEkfHG.jpg) no-repeat fixed 50% 0;
   background-size: cover;
   color: #fff;
   height: auto;
-  /* max-height: 80%; */
 }
 .strange {
   font-size: 2em;
@@ -333,7 +328,6 @@ hgroup0{
   min-height: 150px;
 }
 .rowTwo {
-  /* width: 80%; */
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 15px;
@@ -423,25 +417,19 @@ footerTwo p {
   text-indent: 20px;
   color: #ececec;
 }
-
 .newFooter {
   display: flex;
   justify-content: center;
-  /* padding-left: 2.5%; */
   font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 }
-
 ul {
   overflow: auto;
 }
-
 ul li {
   list-style-type: none;
   float: left;
   padding: 1vw;
-
 }
-
 ul li a i {
   background: #205D7A;
   color: #fff;
@@ -464,11 +452,6 @@ ul li a i {
   background:#00aced
 }
 .fa-instagram {
-  /* display: inline-block;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  border-radius: 40px; */
   color: #fff;
   font-size: 36px;
   line-height: 34px;
@@ -480,4 +463,3 @@ ul li a i {
 ul li a i:hover {
   opacity: .7;
 }
-

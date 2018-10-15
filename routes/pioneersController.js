@@ -26,7 +26,7 @@ router.post('/', async (req, res) => {
 /////////////////////  U P D A T E  /////////////////////////
 
 router.put('/:id', async (req, res) => {
-    const pioneer = await Pioneer.findByIdAndUpdate(req.params.id, req.body, {new: true})
+    const pioneer = await Pioneer.findByIdAndUpdate(req.params.id, req.body, { new: true })
     res.send(pioneer)
 })
 
