@@ -204,16 +204,7 @@ li.active > a.nav-buttonTwo {
 .polarisSubSubs {
   font-size: 16px;
 }
-#section-2 {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  background: url(https://i.imgur.com/dWEkfHG.jpg) no-repeat fixed 50% 0;
-  background-size: cover;
-  color: #fff;
-  height: auto;
-  /* min-height: 100px; */
-}
+
 .parallaxTwo.pTwo2 {
   background: url(https://hdqwalls.com/wallpapers/scifi-future-city-top-view-vehicles-art-fj.jpg) no-repeat fixed 50% 0;
 
@@ -299,10 +290,21 @@ hgroup0{
   border: 1px;
   border-radius: 15px;
   padding: .5em 3em;
-  margin-top: 50vh;
+  margin-top: 80vh;
+  /* height: 80vh; */
   background: rgb(1,12,24);
   background: radial-gradient(circle, rgba(1,12,24,0.8477766106442577) 0%, rgba(19,34,59,0.8141631652661064) 35%, rgba(29,49,80,0.3715861344537815) 100%);
   z-index: 2;
+}
+#section-2 {
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  background: url(https://i.imgur.com/dWEkfHG.jpg) no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+  height: auto;
+  /* max-height: 80%; */
 }
 .strange {
   font-size: 2em;
@@ -310,6 +312,7 @@ hgroup0{
   border-bottom: 1px solid #fff;
   font-weight: lighter;
   padding-top: 15px;
+  height: auto;
 }
 .madScience {
   text-align: left;
@@ -322,7 +325,7 @@ hgroup0{
   padding-top: 35px;
 }
 .row {
-  width: 80%;
+  width: 70%;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 25px;

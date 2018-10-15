@@ -81,6 +81,7 @@ export default class PioneerList extends Component {
             icon: "warning",
             buttons: true,
             dangerMode: true,
+            // target: document.getElementById('section-2') 
         })
             .then((willDelete) => {
             if (willDelete) {
